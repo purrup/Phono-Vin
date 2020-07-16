@@ -281,4 +281,58 @@ footer .email-form .submit {
   cursor: pointer;
   border-radius: 0 20px 20px 0;
 }
+
+@media (max-width: 700px) {
+  .showcase .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .showcase .container :first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .showcase .container :nth-child(2) {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .showcase .container img {
+    width: 80%;
+    margin: auto;
+  }
+  .overlay-text .overlay-text-inner h2 {
+    font-size: 3.5rem;
+  }
+  .gallery .gallery-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery .gallery-container a:first-child {
+    -ms-grid-row: 1;
+    grid-row: 1/1;
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+  }
+  .gallery .gallery-container a:nth-child(2) {
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+  }
+  .gallery .gallery-container a:last-child {
+    display: none;
+  }
+  footer > .container {
+    padding: 2rem 0;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+  }
+  footer > .container div:nth-child(2), footer > .container div:nth-child(3) {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
