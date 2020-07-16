@@ -34,6 +34,7 @@ img {
   width: 100%;
 }
 
+// Utilities start
 .btn {
   display: inline-block;
   background: var(--primary-color);
@@ -48,6 +49,18 @@ img {
     transition: all 0.3s ease-in-out;
   }
 }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--overlay-color);
+
+}
+
+// Utilities end
 
 .container {
   max-width: 1100px;
@@ -95,6 +108,36 @@ img {
     }
     p {
       margin: 1rem 0;
+    }
+  }
+}
+
+// Overlay Text
+.overlay-text {
+  position: relative;
+  background: url('https://i.ibb.co/1RS1dqC/section-b.jpg') no-repeat bottom center/cover;
+  height: 600px;
+  .overlay-text-inner {
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 5rem 0;
+    max-width: 860px;
+    h3 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 5rem;
+      margin-top: 1rem;
+    }
+    p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
     }
   }
 }
